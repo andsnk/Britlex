@@ -90,12 +90,12 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--white-background);
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: transform 500ms cubic-bezier(1,.02,.03,.97);
 }
 
 .is-open {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
 .menu-header {
