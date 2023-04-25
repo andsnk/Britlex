@@ -22,21 +22,29 @@
     <!-- Header -->
     <header class="header container">
       <a href="#" class="link logo">Brit<span class="logo-part">lex</span></a>
-      <!-- <nav>
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">Skills</a></li>
-          <li><a href="#" class="nav-link">About Us</a></li>
-          <li><a href="#" class="nav-link">Pricing</a></li>
-          <li><a href="#" class="nav-link">Contacts</a></li>
-        </ul>
-      </nav>
-      <button type="button">Let’s Talk</button> -->
-      <button class="menu-btn" type="button">
-        <svg class="menu-icon" width="34" height="20">
+      <button class="menu-open-btn js-open-menu" type="button">
+        <svg class="menu-open-icon" width="34" height="20">
           <use href="./img/icons.svg#icon-menu"></use>
         </svg>
       </button>
+      <div class="menu container js-menu-container is-open">
+        <div class="menu-header">
+          <a href="#" class="link menu-logo">Brit<span class="logo-part">lex</span></a>
+        <button class="menu-close-btn js-close-menu" type="button">
+          <svg class="menu-close-icon" width="34" height="20">
+            <use href="./img/icons.svg#icon-menu-close"></use></button>
+        </div>
+        <nav>
+          <ul class="menu-list list">
+            <li class="menu-item"><a href="#" class="menu-link link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">Skills</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">About Us</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">Pricing</a></li>
+            <li class="menu-item"><a href="#" class="menu-link link">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" type="button">Let’s Talk</button>
+      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -195,12 +203,7 @@
             </div>
           </li>
           <li class="pricing-item">
-            <img
-              src="./img/pic-9.svg"
-              alt="Webinar"
-              width="241"
-              height="241"
-            />
+            <img src="./img/pic-9.svg" alt="Webinar" width="241" height="241" />
             <h3 class="pricing-subtitle">Personal Tuition</h3>
             <p class="pricing-text">
               Online one-to-one English tutoring – enjoy our first session for
@@ -235,20 +238,29 @@
 
     <!-- Footer -->
     <footer class="footer container">
-      <a class="footer-logo link" href="#"
-        >Brit<span class="logo-part">lex</span></a
-      >
-      <ul class="footer-list list">
-        <li class="footer-item">
-          <a class="footer-link link" href="#">Terms and Conditions</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="#">Cookie Policy</a>
-        </li>
-      </ul>
+      <div class="footer-wrap">
+        <a class="footer-logo link" href="#"
+          >Brit<span class="logo-part">lex</span></a
+        >
+        <ul class="footer-list list">
+          <li class="footer-item">
+            <a class="footer-link link" href="#">Terms and Conditions</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link link" href="#">Cookie Policy</a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
