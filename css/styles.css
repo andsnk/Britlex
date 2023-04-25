@@ -132,6 +132,11 @@ img {
   color: var(--title-secondary);
 }
 
+.menu-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-btn {
   width: 290px;
   height: 64px;
